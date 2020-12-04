@@ -5,8 +5,11 @@ Tasarlayan: Adı Soyadı: Şevval Duygu KÖK
 
 Dosyalar
 Ana Sayfa görünüm için index.html
-Bilgilerim için hakkımda.html
+
+Bilgilerim için hakkimda.html
+
 Stiller için sytle.css
+
 Script fonksiyonalitesi için script.js
 
 Kullanılan Araçlar

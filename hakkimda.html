@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./profile.jpg" />
+  <title>Youtube</title>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!------ Include the above in your HEAD tag ---------->
+
+  <link rel="stylesheet" href="./style/style.css" />
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <!--
+                Header ıcın  youtube ıconu
+            -->
+      <ul class="left-icons">
+        <li id="navbtn">
+          <i class="fas fa-bars"></i>
+        </li>
+        <a href="index.html">
+          <li id="logo">
+            <i class="fab fa-youtube"></i>
+            <span>Youtube</span>
+          </li>
+        </a>
+      </ul>
+      <!--
+                Header ıcın search box
+            -->
+      <div class="search">
+        <input type="text" placeholder="Search" />
+        <span class="searchbtn">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+      <!--
+                Header ıcın search boxın sagındakı kısayol ıconları ve profil
+            -->
+      <ul class="right-icons">
+        <li class="search-icon">
+          <i class="fas fa-search"></i>
+        </li>
+
+        <li class="create">
+          <svg viewBox="0 0 28 28" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+            style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              ">
+            <g class="style-scope yt-icon">
+              <path
+                d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z"
+                class="style-scope yt-icon"></path>
+            </g>
+          </svg>
+        </li>
+
+        <li class="apps">
+          <i class="fas fa-th"></i>
+        </li>
+
+        <li class="bell">
+          <i class="fas fa-bell"></i>
+        </li>
+
+        <li class="profile">
+          <img src="./profile.jpg" alt="" />
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--
+                Soldaki navigator, js ıle mobıle durumlarda acılır kapanır yapıldı
+            -->
+
+  <section class="hero">
+    <div class="sidebar">
+      <ul class="left-icons">
+        <li id="navbtn_mobile">
+          <i class="fas fa-bars"></i>
+        </li>
+
+        <li id="logo">
+          <i class="fab fa-youtube"></i>
+          <span>Youtube</span>
+        </li>
+      </ul>
+
+      <ul id="sidebar-content">
+        <li class="active trigger">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </li>
+
+        <li class="trigger">
+          <i class="fas fa-fire"></i>
+          <span>Trending</span>
+        </li>
+
+        <li class="sub trigger">
+          <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+            style="
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              ">
+            <g class="style-scope yt-icon">
+              <path
+                d="M18.7 8.7H5.3V7h13.4v1.7zm-1.7-5H7v1.6h10V3.7zm3.3 8.3v6.7c0 1-.7 1.6-1.6 1.6H5.3c-1 0-1.6-.7-1.6-1.6V12c0-1 .7-1.7 1.6-1.7h13.4c1 0 1.6.8 1.6 1.7zm-5 3.3l-5-2.7V18l5-2.7z"
+                class="style-scope yt-icon"></path>
+            </g>
+          </svg>
+          <span> Subscriptions </span>
+        </li>
+
+        <li class="trigger">
+          <svg viewBox="0 0 27 27" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+            style="
+                color: #555;
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              ">
+            <g class="style-scope yt-icon">
+              <path fill="none" d="M0 0h24v24H0z" class="style-scope yt-icon"></path>
+              <path
+                d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"
+                class="style-scope yt-icon"></path>
+            </g>
+          </svg>
+          <span>Library</span>
+        </li>
+
+        <li>
+          <i class="fas fa-history"></i>
+          <span>History</span>
+        </li>
+
+        <li>
+          <svg viewBox="0 0 27 27" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+            style="
+                color: #555;
+                pointer-events: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+              ">
+            <g class="style-scope yt-icon">
+              <path
+                d="M18.4 5.6v12.8H5.6V5.6h12.8zm0-1.8H5.6a1.8 1.8 0 0 0-1.8 1.8v12.8a1.8 1.8 0 0 0 1.8 1.9h12.8a1.8 1.8 0 0 0 1.9-1.9V5.6a1.8 1.8 0 0 0-1.9-1.8z"
+                class="style-scope yt-icon"></path>
+              <path d="M10.2 9v6.5l5-3.2-5-3.2z" class="style-scope yt-icon"></path>
+            </g>
+          </svg>
+          <span>Your Videos</span>
+        </li>
+
+        <li>
+          <i class="fas fa-clock"></i>
+          <span>Watch Later</span>
+        </li>
+      </ul>
+      <hr />
+      <h4 class="side-header">Subscriptions</h4>
+
+      <ul class="subscriptions">
+        <li>
+          <i class="fas fa-thumbs-up"></i>
+          <span>Item 1</span>
+        </li>
+        <li>
+          <i class="fas fa-thumbs-up"></i>
+          <span>Item 1</span>
+        </li>
+        <li>
+          <i class="fas fa-thumbs-up"></i>
+          <span>Item 1</span>
+        </li>
+        <li>
+          <i class="fas fa-thumbs-up"></i>
+          <span>Item 1</span>
+        </li>
+      </ul>
+
+      <hr />
+
+      <h4 class="side-header">More from Youtube</h4>
+
+      <ul class="more">
+        <li>
+          <i class="fas fa-heartbeat"></i>
+          <span>Gaming</span>
+        </li>
+        <li>
+          <i class="fas fa-thumbs-up"></i>
+          <span>Live</span>
+        </li>
+        <li>
+          <i class="fas fa-thumbs-up"></i>
+          <span>Fashion & Beauty</span>
+        </li>
+        <li>
+          <i class="fas fa-thumbs-up"></i>
+          <span>Learning</span>
+        </li>
+      </ul>
+
+      <hr />
+
+      <ul class="more">
+        <li>
+          <i class="fas fa-cog"></i>
+          <span>Settings</span>
+        </li>
+        <li>
+          <i class="fas fa-flag"></i>
+          <span>Report History</span>
+        </li>
+        <li>
+          <i class="fas fa-question-circle"></i>
+          <span>Help</span>
+        </li>
+        <li>
+          <i class="fas fa-comment-alt"></i>
+          <span>Send feedback</span>
+        </li>
+      </ul>
+
+      <div class="sub-footer">
+        <span>About</span>
+        <span>Copyright</span>
+        <span>Contact Us</span>
+        <span>Creators</span>
+        <span>Advertise</span>
+        <span>Developers</span>
+      </div>
+
+      <div class="footer">&copy; 2020 Google LLC</div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="d-flex justify-content-center h-100 col-sm-6">
+          <h4 style="margin-top: 30px; margin-left: 120px;">Şevval Duygu Kök</h4>
+          <div class="image_inner_container">
+            <img src="profile.jpg" />
+          </div>
+          <div class=" d-flex justify-content-center" style="padding-left: 170px !important;">
+            <a href="https://www.linkedin.com/in/sevvalduygukok/" target="_blank">
+              <i class="fa fa-linkedin" style="font-size:36px; color: brown;"> &nbsp;</i>
+            </a>
+            <a href="https://github.com/duygugogua/" target="_blank">
+              <i class="fa fa-github" style="font-size:36px; color: brown;"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-6">
+
+
+          <div class="scene">
+            <div class="cube">
+              <div class="cube__face cube__face--front">
+                <ul class="moreCube">
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Android</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="fa fa-star" style="color: black;"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Flutter</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="fa fa-star" style="color: black;"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>C++</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="fa fa-star" style="color: black;"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li style="list-style-type:disc; text-align: right !important;">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Python</span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="fa fa-star" style="color: black; text-align: right;"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>HTML</span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="fa fa-star" style="color: black;"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li>
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>CSS</span> &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="fa fa-star" style="color: black;"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cube__face cube__face--back">
+                <ul class="moreCube" style="color: black;">
+                  <h2>Diller (Seviye)</h2>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>İngilizce</span>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span class="fa fa-star" style="color: black;"></span>
+                    <span class="fa fa-star" style="color: black;"></span>
+                    <span class="fa fa-star" style="color: black;"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>
+                      Almanca</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cube__face cube__face--right">
+                <ul class="moreCube" style="color: black;">
+                  <h2>Projeler (Teknoloji)</h2>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Zikirmatik &nbsp; (Android) </span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>
+                      Iphone Calculator Clone &nbsp; (Java) </span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Youtube &nbsp; (HTML & CSS & JS)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cube__face cube__face--left">
+                <ul class="moreCube" style="color: black;">
+                  <h2>Projeler (Kullanılan Teknoloji)</h2>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Zikirmatik &nbsp; (Android) </span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>
+                      Iphone Calculator Clone &nbsp; (Java) </span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Youtube &nbsp; (HTML & CSS & JS)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cube__face cube__face--top">
+                <ul class="moreCube" style="color: black;">
+                  <h2>Projeler (Kullanılan Teknoloji)</h2>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Zikirmatik &nbsp; (Android) </span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>
+                      Iphone Calculator Clone &nbsp; (Java) </span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Youtube &nbsp; (HTML & CSS & JS)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="cube__face cube__face--bottom">
+                <ul class="moreCube" style="color: black;">
+                  <h2>Projeler (Kullanılan Teknoloji)</h2>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Zikirmatik &nbsp; (Android) </span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>
+                      Iphone Calculator Clone &nbsp; (Java) </span>
+                  </li>
+                  <li style="list-style-type:disc">
+                    <i class="fas fa-bullseye"></i> &nbsp; &nbsp;
+                    <span>Youtube &nbsp; (HTML & CSS & JS)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="radio-group">
+            <label>
+              <input type="radio" name="rotate-cube-side" value="front" checked /> Teknolojiler &nbsp;
+            </label>
+            <label>
+              <input type="radio" name="rotate-cube-side" value="right" /> Projeler &nbsp;
+            </label>
+            <label>
+              <input type="radio" name="rotate-cube-side" value="back" /> Dil &nbsp;
+            </label>
+            <label>
+              <input type="radio" name="rotate-cube-side" value="left" /> Bıse? &nbsp;
+            </label>
+            <label>
+              <input type="radio" name="rotate-cube-side" value="top" /> Hobi &nbsp;
+            </label>
+            <label>
+              <input type="radio" name="rotate-cube-side" value="bottom" /> Referans &nbsp;
+            </label>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://kit.fontawesome.com/03e233b384.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -19,3 +19,6 @@ Javascript
 
 Kullanılan Yazılımlar
 VSCode
+
+Özgeçmiş
+Profil Fotoğrafım ilgili sayfaya yönlendirmekte
